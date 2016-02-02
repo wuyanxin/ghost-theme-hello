@@ -26,23 +26,19 @@
 
     {{> "sidebar"}}
 
-    {{navigation}}
-
     <div class="hello-wrapper">
         {{{body}}}
+        <footer class="site-footer clearfix">
+          <section class="copyright">
+            &copy; 2015-{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a>
+          </section>
+
+          <section class="poweredby">
+            Build with <a href="http://github.com/wuyanxin/ghost-theme-hello">hello</a>
+            on <a href="http://ghost.org">ghost</a>
+          </section>
+        </footer>
     </div>
-
-    <!--<div class="site-wrapper">-->
-
-        <!--{{! Everything else gets inserted here }}-->
-        <!--{{!body}}}-->
-
-        <!--<footer class="site-footer clearfix">-->
-            <!--<section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>-->
-            <!--<section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>-->
-        <!--</footer>-->
-
-    <!--</div>-->
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}

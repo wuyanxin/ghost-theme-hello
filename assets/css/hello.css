@@ -60,9 +60,10 @@ ul.hello-social li {
 
 .hello-footer {
     position: absolute;
+    min-height: 1em;
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     line-height: 15px;
-    min-height: 1em;
     bottom: 5px;
     padding: 0 5px;
 }
@@ -76,6 +77,10 @@ ul.hello-social li {
     padding-bottom: 1rem;
     border-bottom: #EBF2F6 1px dashed;
     word-wrap: break-word;
+}
+
+.hello-wrapper .site-footer {
+    position: relative;
 }
 
 @font-face {
